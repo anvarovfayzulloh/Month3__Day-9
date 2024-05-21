@@ -1,1 +1,36 @@
 // FOR NAV
+
+.nav__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 50px 0px;
+    
+}
+.nav__logo{
+    cursor: url(../image/cursor.svg), pointer;
+}
+.nav__list{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 33px;
+    font-family: 'Barlow';
+    font-weight: 700;
+
+    li{
+        height: 15px;
+    }
+}
+.nav-link{
+    color: #83888F;
+    transition: 300ms;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.9px; 
+    text-transform: uppercase;
+    &:hover{
+        color: #333D4B;
+        cursor: url(../image/cursor.svg), pointer;
+    }
+}

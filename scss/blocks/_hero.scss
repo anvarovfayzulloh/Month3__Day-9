@@ -1,1 +1,29 @@
 // FOR HERO
+
+.hero__wrapper{
+    position: relative;
+}
+.hero__img{
+    width: 100%;
+    border-radius: 10px;
+}
+.hero__content{
+    position: absolute;
+    z-index: 2;
+    top: 104px;
+    left: 58px
+}
+.hero__title{
+    @include title(72px, 72px, left, );
+    max-width: 493px;
+}
+.hero__subtitle{
+    padding: 32px 0px 56px 0px; 
+    font-family: 'Barlow';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #CFCFCC;
+    max-width: 392px;
+}

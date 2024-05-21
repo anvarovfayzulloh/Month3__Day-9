@@ -3,3 +3,15 @@
 // SIZES
 
 // FONTS
+
+
+
+// MIXIN
+
+@mixin title($fs,  $lh, $ta, $c: #FEFCF7){
+    font-family: 'Fraunces';
+    font-size: $fs;
+    line-height: $lh;
+    text-align: $ta;
+    color: $c;
+}

@@ -1,1 +1,18 @@
 // FOR COMMONS
+
+.button-primary{
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-weight: 900;
+    @include title(18px, 25px, center,);
+    background-color: #0E8784;
+    padding: 15px 31px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+
+    &:hover{
+        background-color: #66D2CF;
+        cursor: url(../image/cursor.svg), pointer;
+    }
+}
