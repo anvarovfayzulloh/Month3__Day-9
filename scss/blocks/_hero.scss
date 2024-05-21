@@ -6,12 +6,15 @@
 .hero__img{
     width: 100%;
     border-radius: 10px;
+    min-height: 500px;
 }
 .hero__content{
+    display: grid;
+    grid-template-columns: 1fr;
     position: absolute;
     z-index: 2;
     top: 104px;
-    left: 58px
+    left: 58px;
 }
 .hero__title{
     @include title(72px, 72px, left, );

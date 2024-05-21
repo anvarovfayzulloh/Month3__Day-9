@@ -1,0 +1,20 @@
+.types__wrapper{
+    padding: 216px 0px 246px 0px;
+    display: grid;
+    grid-template-columns: 255px 255px 255px 255px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.coffee__card-title{
+    @include title(24px, 32px, center, #333D4B);
+    padding: 72px 0px 25px;
+}
+.coffee__card-text{
+    font-family: 'Barlow';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    color: #333D4B;
+}
