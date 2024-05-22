@@ -80,10 +80,7 @@
         text-align: center;
         max-width: 279px;
     }
-    .hero__button{
-        display: flex;
-        justify-content: center;
-    }
+    
 }
 @media screen and (max-width: 552px) {
     .tablet{
@@ -92,5 +89,9 @@
     .mobile{
         display: block;
         min-height: 550px;
+    }
+    .hero__button{
+        display: flex;
+        justify-content: center;
     }
 }
