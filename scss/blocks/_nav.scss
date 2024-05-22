@@ -3,7 +3,7 @@
 .nav__wrapper{
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     padding: 50px 0px;
     
 }
@@ -32,5 +32,19 @@
     &:hover{
         color: #333D4B;
         cursor: url(../image/cursor.svg), pointer;
+    }
+}
+.burger__menu{
+    width: 16px;
+    height: 16px;
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .nav__list{
+        display: none;
+    }
+    .burger__menu{
+        display: block;
     }
 }

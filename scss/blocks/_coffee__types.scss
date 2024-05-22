@@ -18,3 +18,42 @@
     text-align: center;
     color: #333D4B;
 }
+.coffee__content{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+@media screen and (max-width: 1110px) {
+    .types__wrapper{
+        grid-template-columns: 551px;
+        justify-content: center;
+    }
+    .coffee__card{
+        display: flex;
+        align-items: center;
+        .coffee__card-title{
+            padding: 0px 0px 25px 0px;
+            text-align: left;
+        }
+        .coffee__card-text{
+            max-width: 282px;
+            text-align: left;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .types__wrapper{
+        grid-template-columns: 282px;
+        justify-content: center;
+    }
+    .coffee__card{
+        display: block;
+        .coffee__card-title{
+            padding: 0px 0px 25px 0px;
+            text-align: center;
+        }
+        .coffee__card-text{
+            max-width: 282px;
+            text-align: center;
+        }
+    }
+}

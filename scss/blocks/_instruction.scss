@@ -76,3 +76,21 @@
     text-align: left;
     color: #333D4B;
 }
+
+@media screen and (max-width: 1024px) {
+    .instruction__card-wrapper{
+        gap: 10px;
+    }
+    .instruction__text{
+        max-width: 223px;
+    }
+}
+
+// @media screen and (max-width: 768px) {
+//     .form{
+//         display: none;
+//     }
+//     .instruction__card-wrapper{
+//         grid-template-columns: 1fr;
+//     }
+// }

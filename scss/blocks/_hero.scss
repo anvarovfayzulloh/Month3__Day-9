@@ -6,6 +6,17 @@
 .hero__img{
     width: 100%;
     border-radius: 10px;
+    object-fit: cover;    
+}
+.desktop{
+    min-height: 600px;
+}
+.tablet{
+    display: none;
+    min-height: 500px;
+}
+.mobile{
+    display: none;
     min-height: 500px;
 }
 .hero__content{
@@ -13,8 +24,8 @@
     grid-template-columns: 1fr;
     position: absolute;
     z-index: 2;
-    top: 104px;
-    left: 58px;
+    top: 117px;
+    left: 85px;
 }
 .hero__title{
     @include title(72px, 72px, left, );
@@ -29,4 +40,57 @@
     text-align: left;
     color: #CFCFCC;
     max-width: 392px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .desktop{
+        display: none;
+    }
+    .tablet{
+        display: block;
+        min-height: 600px;
+    }
+    .hero__content{
+        top: 104px;
+        left: 58px;
+    }
+    .hero__title{
+        @include title(48px, 48px, left);
+        max-width: 329px;
+    }
+    .hero__subtitle{
+        padding: 24px 0px 39px 0px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero__content{
+        top: 100p;
+        left: 24px;
+        right: 24px;
+    }
+    .hero__title{
+        @include title(40px, 40px, center, );
+        max-width: 279px;
+    }
+    .hero__subtitle{
+        text-align: center;
+        max-width: 279px;
+    }
+    .hero__button{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 552px) {
+    .tablet{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        min-height: 550px;
+    }
 }

@@ -2,6 +2,10 @@
     background: #2C343E;
     padding: 100px 85px 65px 85px;
 }
+.free{
+    width: 72px;
+    height: 72px;
+}
 .choice__titles{
     display: flex;
     flex-direction: column;
@@ -48,4 +52,61 @@
 }
 .choice__title-card{
     @include title(24px, 32px, center,)
+}
+
+@media screen and (max-width: 1360px) {
+    .choice__wrapper{
+        padding: 56px 58px 70px 58px;
+    }
+    .choice__cards{
+        grid-template-columns: 1fr;
+    }
+    .choice__card{
+        display: flex;
+        gap: 55px;
+        padding: 41px 48px 41px 70px;
+    }
+    .choice__card-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0px;
+    }
+    .choice__title-card{
+        text-align: left;
+    }
+    .choice__subtitle{
+        text-align: left;
+        max-width: 344px;
+    }
+    .subtitle{
+        text-align: center;
+        max-width: 540px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .choice__wrapper{
+        padding: 64px 24px 53px 24px;
+    }
+    .choice__card{
+        display: block;
+        gap: 55px;
+        padding: 72px 12px 58px 12px;
+    }
+    .choice__card-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 56px 0px 0px 0px;
+    }
+    .choice__title-card{
+        text-align: center;
+    }
+    .choice__subtitle{
+        text-align: center;
+        max-width: 344px;
+    }
+    .subtitle{
+        text-align: center;
+        max-width: 540px;
+    }
 }
