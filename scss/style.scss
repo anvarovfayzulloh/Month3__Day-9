@@ -9,6 +9,12 @@
 @import "./blocks/hero";
 @import "./blocks/coffee__types";
 @import "./blocks/choice";
+@import "./blocks/instruction";
+@import "./blocks/footer";
+
+.body{
+    background-color: #FEFCF7;
+}
 
 .container{
     max-width: 1440px;
