@@ -53,7 +53,7 @@
 .choice__title-card{
     @include title(24px, 32px, center,)
 }
-
+                                
 @media screen and (max-width: 1360px) {
     .choice__wrapper{
         padding: 56px 58px 70px 58px;
